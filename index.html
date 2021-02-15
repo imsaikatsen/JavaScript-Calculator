@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js"></script>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="calculator">
+          <form action=""  name="form" >
+            
+            <div class="calculator__display">
+              <input type="text" value="" name="display" placeholder="0" readonly>
+            </div> 
+    
+            <div class="calculator__keys">
+              <button type="button" value="+" onclick="calculate(this.value)">+</button>
+              <button type="button" value="-" onclick="calculate(this.value)">-</button>
+              <button type="button" value="*" onclick="calculate(this.value)">&times;</button>
+              <button type="button" value="/" onclick="calculate(this.value)">÷</button>
+              <button type="button" value="7" onclick="calculate(this.value)">7</button>
+              <button type="button" value="8" onclick="calculate(this.value)">8</button>
+              <button type="button" value="9" onclick="calculate(this.value)">9</button>
+              <button type="button" value="4" onclick="calculate(this.value)">4</button>
+              <button type="button" value="5" onclick="calculate(this.value)">5</button>
+              <button type="button" value="6" onclick="calculate(this.value)">6</button>
+              <button type="button" value="1" onclick="calculate(this.value)">1</button>
+              <button type="button" value="2" onclick="calculate(this.value)">2</button>
+              <button type="button" value="3" onclick="calculate(this.value)">3</button>
+              <button type="button" value="0" onclick="calculate(this.value)">0</button>
+              <button type="button" value="." onclick="calculate(this.value)">.</button>
+              <button data-action="clear" value="" onclick="display.value=null">AC</button>
+              <button class="key--equal" type="button"  data-action="calculate" value="=" onclick="display.value = eval(display.value)">=</button>
+            </div>
+        </div>
+          </form>
+      </div>
+</body>
+</html>
