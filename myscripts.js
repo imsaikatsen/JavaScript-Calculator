@@ -27,48 +27,6 @@ function keyPressHandler(e) {
 
 
 
-function validate(e){  
-    var num = form.display.value; 
-    if (isNaN(num)){  
-      return false;  
-    }else{  
-      return true;  
-      }  
-}
-
-// function disable(e)
-// {
-//  document.onkeypress = function (e) 
-//  {
-//     // console.log(e);
-//      var name = [1,2,3,4].includes(e.key);
-
-//      console.log(name);
-
-//      if(name){
-//          return true;
-//      }else{
-//         return false;
-//      }
-  
-//  }
-// }
-
-
-// function validate() { 
-    
-//     var n = form.display.value; 
-
-//     if (isNaN(n)) {  
-//         return false; 
-//     } else { 
-//         return true; 
-//     } 
-// } 
-
-
-
-
 
 
 
